@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a04e573cf5a4bb84bba31a134013bb23, type: 3}
+  m_Name: Standard
+  m_EditorClassIdentifier: 
+  backgroundColour: {r: 0.85098046, g: 0.6, b: 0.96470594, a: 1}
+  towerColour: {r: 1, g: 1, b: 1, a: 1}
+  towerHighlight: {r: 0, g: 0.7882353, b: 0.99215686, a: 1}
+  tile1Colour: {r: 0.9490197, g: 0.38823533, b: 0.08627451, a: 1}
+  tile2Colour: {r: 0.9607844, g: 0.68235296, b: 0.18039216, a: 1}
+  tile3Colour: {r: 0.68235296, g: 0.9843138, b: 0.2509804, a: 1}
+  tile4Colour: {r: 0.10980393, g: 0.82745105, b: 0.6862745, a: 1}
+  tile5Colour: {r: 0.050980397, g: 0.38823533, b: 0.454902, a: 1}
+  textColour: {r: 0.9803922, g: 0.95294124, b: 0.9921569, a: 1}

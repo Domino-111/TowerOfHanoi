@@ -1,3 +1,4 @@
+using TMPro;
 using UnityEngine;
 
 public class Game : MonoBehaviour
@@ -8,9 +9,27 @@ public class Game : MonoBehaviour
 
     public Color regularColour, highlightedColour; //Colour palette for towers
 
+    public TMP_Text turnTextDisplay;
+    private int turnCounter;
+    public int turnProperty
+    {
+        get
+        {
+            return turnCounter;
+        }
+
+        set
+        {
+            turnCounter = value;
+            turnTextDisplay.text = turnCounter.ToString();
+        }
+    }
+
     private void Start()
     {
         ApplyPalette();
+
+        turnProperty = 0;
     }
 
     public void SelectTower(Tower newTower)
@@ -57,6 +76,8 @@ public class Game : MonoBehaviour
         {
             topTile.SetParent(toTower.towerAnchor);
             topTile.SetSiblingIndex(0);
+
+            turnProperty += 1;
         }
         //print("Moving from " + fromTower.name + " to " + toTower.name);
     }
